@@ -2,7 +2,7 @@ require 'pry'
 
 class Triangle
 
-  attr_accessor :angle1, :angle2, :angle3
+  attr_reader :angle1, :angle2, :angle3
 
   def initialize(angle1, angle2, angle3)
     @angle1 = angle1
