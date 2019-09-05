@@ -13,7 +13,7 @@ class Triangle
   def kind
     if (@angle1 <= 0) || (@angle2 <= 0) || (@angle3 <= 0)
       raise TriangleError
-    elsif (@angle1 + @angle2 <= @angle3)
+    elsif @angle1 + @angle2 <= @angle3 || @angle1 + @angle3 <= @angle2 || @angle2 + @angle3 <= @angle1
       raise TriangleError
     else
       if self.angle1 == self.angle3 && self.angle2 == self.angle3
