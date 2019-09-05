@@ -23,10 +23,7 @@ class Triangle
       elsif self.angle1 != self.angle2 && self.angle3 != self.angle1 && self.angle3 != self.angle2
         :scalene
       end
-
     end
-
-
   end
 
     class TriangleError < StandardError
