@@ -17,7 +17,7 @@ class Triangle
       :equilateral
     elsif self.angle1 || self.angle2 == self.angle3
       :isosceles
-    elsif self.angle1 != (self.angle2 && self.angle3) != self.angle1 && self.angle3 != self.angle2
+    elsif self.angle1 != self.angle2 && self.angle3 != self.angle1 && self.angle3 != self.angle2
       :scalene
     else
 
