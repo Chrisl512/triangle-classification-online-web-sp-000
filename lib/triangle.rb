@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    #if (@angle1 <= 0)  || (@angle2 <= 0)
+    if (@angle1 <= 0)  || (@angle2 <= 0)
 
 
     else
