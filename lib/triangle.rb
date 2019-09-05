@@ -12,8 +12,9 @@ class Triangle
 
   def kind
     if (@angle1 <= 0)  || (@angle2 <= 0)
-
-
+      raise TriangleError
+    elsif (@angle1 + @angle2 <= @angle3)
+      raise TriangleError
     else
       if self.angle1 == self.angle3 && self.angle2 == self.angle3
         :equilateral
@@ -28,7 +29,7 @@ class Triangle
 
   end
 
-    #class TriangleError < StandardError
+    class TriangleError < StandardError
 
     #end
 
