@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    if (@angle1 <= 0)  || (@angle2 <= 0)
+    if (@angle1 <= 0)  || (@angle2 <= 0) || (@angle3 <= 0)
       raise TriangleError
     elsif (@angle1 + @angle2 <= @angle3)
       raise TriangleError
